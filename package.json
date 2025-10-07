@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/nyjackson/SBA-318#readme",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^5.1.0",
     "nodemon": "^3.1.10"
   }
