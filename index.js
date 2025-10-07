@@ -1,0 +1,22 @@
+const express = require("express")
+const app = express()
+const port = 4000
+
+const locationRoute = require("./routes/locationsRoute")
+const charRoute = require("./routes/charRoute")
+
+app.listen(port, () => {
+    console.log(
+        "Started listening on port ", port
+    )
+})
+
+// Middleware
+const logger = app.use((req,res,next) => {
+console.log(`${req.method} on ${req.url}`)
+next()
+})
+
+// Routes
+app.use("/locations", locationRoute)
+app.use("/characters",charRoute)
