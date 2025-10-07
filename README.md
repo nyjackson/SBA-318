@@ -6,6 +6,7 @@
 ## Installation/Access ##
 
 ## Resource Links ##
+[Good Omens Wiki](https://goodomens.fandom.com/)
 
 ## Functions: Definitions & Usage ##
 
