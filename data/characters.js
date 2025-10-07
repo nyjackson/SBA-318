@@ -28,6 +28,21 @@ const chars = [
     status: "Alive",
     image: "" //url image
 
+},
+{ 
+    name: "Adam Young",
+    age: "11",
+    pronouns: "He/Him",
+    affiliation:["The Them","Crowley","Aziraphale","Anathema Device"],
+    species: "Antichrist",
+    personality: "He is a friendly young boy. He is somewhat confident and a bit bossy as the leader of the Them, but is also shown to be very caring to his friends and other people he meets such as Anathema. He is shown to be a bit naive, as he believes everything he reads in the magazines that Anathema gives him and initially believes that Armageddon is the only way to undo all the damage that has been done to the Earth and make things right.",
+    quotes: ["I think I'll call him... Dog!"],
+    seasons: "Season 1",
+    alias: ["The Antichrist", "Notorious Son of Satan","The Boy", "The Adversary, Destroyer of Kings, Angel of the Bottomless Pit, Prince of this World and Lord of Darkness"],
+    title:"The Son of Satan",
+    status: "Alive",
+    image: "" //url image
+
 }
 
 ]
@@ -64,4 +79,6 @@ const Character = {
     image: "" //url image
 
 }
+
+
 module.exports = chars
