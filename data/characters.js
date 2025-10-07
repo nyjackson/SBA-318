@@ -1,21 +1,5 @@
-const chars = []
-// ^ array of character objects
-
-// const Character = { 
-//     name: "",
-//     age: "",
-//     pronouns: "",
-//     affiliation:"",
-//     species: "",
-//     personality: "",
-//     quotes: [],
-//     seasons: "",
-//     alias: [],
-//     title:""
-
-// }
-
-const Character = { 
+const chars = [
+    { 
     name: "Aziraphale",
     age: "6000+ years old - Immortal",
     pronouns: "He/Him",
@@ -27,6 +11,56 @@ const Character = {
     alias: ["Angel", "Mr. A. Z. Fell", "The Southern Pansy", "Dr. McFell"],
     title:"Angel of the Eastern Gate",
     status: "Alive",
+    image: "" //url image
+
+},
+{ 
+    name: "Crowley",
+    age: "6000+ years old - Immortal",
+    pronouns: "All or Any",
+    affiliation:["Aziraphale", "Hell (formerly)", "Dowling Estate (formerly)"],
+    species: "Demon",
+    personality: "Crowley is overall a non-threatening demon. He somewhat attempts to be evil in his own way, but is actually quite morally decent in human terms. He objects to the killing of innocent people and animals and wants to save the world, albeit for his own reasons. He has a flair for the dramatic and can be a heavy drinker. He seems to not take his job seriously and doesn't really partake in 'normal demon' things. Most of his 'accomplishments' were faked or done by humans, whom he considers are better at making their own lives miserable than he is. He thinks of himself as evil, but is usually a minor inconvenience at worst.",
+    quotes: ["Oh, Lord, heal this bike.", "Excuse me ma'am, we're two supernatural entities looking for the notorious son of Satan, wonder if you might help us with our inQUIRIES?","Sorry, consecrated ground. Ah, it's like being on the beach in bare feet!","Because humans are weird and that's how it works.","What kind of stupid question is that ‘still a demon’? What else am I going to be? An aardvark?"],
+    seasons: "Season 1 & 2",
+    alias: ["Demon", "Bildad the Shuhite", "Crawly", "Anthony J. Crowley","A.J. Crowley"],
+    title:"Serpent of Eden",
+    status: "Alive",
+    image: "" //url image
+
+}
+
+]
+// ^ array of character objects
+
+// const Character = { 
+//     name: "",
+//     age: "",
+//     pronouns: "",
+//     affiliation:[],
+//     species: "",
+//     personality: "",
+//     quotes: [],
+//     seasons: "",
+//     alias: [],
+//     title:"",
+//     status: "",
+//     image: "" //url image
+
+// }
+
+const Character = { 
+    name: "",
+    age: "",
+    pronouns: "",
+    affiliation:[],
+    species: "",
+    personality: "",
+    quotes: [],
+    seasons: "",
+    alias: [],
+    title:"",
+    status: "",
     image: "" //url image
 
 }
