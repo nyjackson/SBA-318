@@ -19,6 +19,8 @@ const Hell = {
 const Heaven = { 
     name: "Heaven",
     type: "",
+    introduction:"",
+    description: "Heaven seems to be one big space in which individual rooms don't exist. It resembles one big floor of a tall building with frequent pillars supporting the ceiling. It appears to be endless without any objects in sight, with occasional exceptions. Another significant detail is that Heaven entirely consists of the color white. The floor, wall, ceiling, pillars, and even windows only appear as white, making Heaven visually a very bright place.",
     alias: [],
     population:"",
     inhabitants: "",
