@@ -6,21 +6,22 @@ const characters = require('../data/characters')
 router.route('/')
 .get((req,res) => {
     if(req.query.length != undefined ){
-        res.send("Query Param Passed.")
+        res.send("Undefined Query Param Passed.")
     }
     else if(req.query.alias !== undefined){
         console.log(req.query.alias)
         const findByAlias = characters.find(character => 
-            character.alias.find(aliasName => aliasName.toLowerCase() == req.query.alias.toLowerCase())
+            character.alias.find(aliasName => {
+                const partsOfAlias = aliasName.split(' ')
+                const partFound = partsOfAlias.find(word => word.toLowerCase() == req.query.alias.toLowerCase())
+                return partFound || aliasName.toLowerCase() == req.query.alias.toLowerCase()
+            })
         ) 
-        console.log(findByAlias)
-        res.json(
-           {message: "Character found by alias. Loading character info..", data: findByAlias}
-        )
+        res.json({message:"Character found by alias. Loading", data:findByAlias})
     }
 
     else{
-        res.json({message: "Characters found. Loading all..", data:characters})
+        res.json({message: "Loading all characters....", data:characters})
     }
 });
 

@@ -1,10 +1,5 @@
-const locations = []
-
-
-
-
-
-const Hell = { 
+const locations = [
+    { 
     name: "Hell",
     type: "Infernal Realm",
     introduction: "Hello. Have a miserable eternity. We'd like to apologize for the wait and the conditions, but we won't. Cheer up. Things could be worse, and they will be... for the rest of eternity, worse and worse and worse.",
@@ -15,40 +10,20 @@ const Hell = {
     alliedWith:["Chattering Order of St Beryl", "Four Horsemen of the Apocalypse", "Michael (termporarily)"],
     image: "" //url image
 
-}
-const Heaven = { 
+},
+{ 
     name: "Heaven",
-    type: "",
+    type: "Celestial Realm",
     introduction:"",
     description: "Heaven seems to be one big space in which individual rooms don't exist. It resembles one big floor of a tall building with frequent pillars supporting the ceiling. It appears to be endless without any objects in sight, with occasional exceptions. Another significant detail is that Heaven entirely consists of the color white. The floor, wall, ceiling, pillars, and even windows only appear as white, making Heaven visually a very bright place.",
-    alias: [],
-    population:"",
-    inhabitants: "",
-    alliedWith:"",
+    alias: ["Upstairs","The Up", "The Upper Floors"],
+    population:"10 million Angels",
+    inhabitants: ["God","Angels"],
+    alliedWith:"Eric (temporarily)",
     image: "" //url image
 
 }
-const Earth = { 
-    name: "",
-    type: "",
-    alias: [],
-    population:"",
-    inhabitants: "",
-    alliedWith:"",
-    image: "" //url image
-
-}
-// const Location = { 
-//     name: "",
-//     type: "",
-//     alias: [],
-//     population:"",
-//     inhabitants: "",
-//     alliedWith:"",
-//     image: "" //url image
-
-// }
-
+]
 
 
 module.exports = locations;

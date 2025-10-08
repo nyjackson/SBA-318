@@ -17,6 +17,8 @@ next()
 app.use("/locations", locationRoute)
 app.use("/characters", charRoute)
 
+
+
 app.listen(port, () => {
     console.log(
         "Started listening on port ", port
