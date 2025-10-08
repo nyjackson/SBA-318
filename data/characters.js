@@ -49,11 +49,11 @@ const chars = [
     age: "Mid 20's",
     pronouns: "She/Her",
     affiliation:["Agnes Nutter","Virtue Device","John Device", "Newton Pulsifier","Adam Young"],
-    species: "Human - Witch",
+    species: "Human",
     personality: "Anathema is very goal-driven, working away from home to study and understand the prophecies of her ancestor Agnes Nutter. She is passionate about her work and various conspiracy theories, as evidenced by the many magazines she gives to Adam Young. She is smart, brave, and vaguely understands what's going on.",
     quotes: ["That's because schools are oppressive tools of the state!","... it's not enough to know what the future is. You have to know what it means."],
     seasons: "Season 1",
-    alias: ["My Dear"],
+    alias: ["My Dear", "Witch"],
     title:"Practical Occultist & Professional Descendant",
     status: "Alive",
     image: "https://static.wikia.nocookie.net/good-omens/images/1/1b/Anathema-MP.jpg/revision/latest?cb=20190501213551" //url image
@@ -128,6 +128,20 @@ const chars = [
     title:"Horseperson of the Apocalypse",
     status: "Unknown",
     image: "https://static.wikia.nocookie.net/good-omens/images/1/1f/Famine-MP.jpg/revision/latest?cb=20190501213400" //url image
+},
+{ 
+    name: "Death",
+    age: "Older than time - Immortal",
+    pronouns: "He/Him",
+    affiliation:["Famine", "Pollution", "War", "Demons"],
+    species: "Horseperson of the Apocalypse",
+    personality: "Death is said to have a logical and reasonable personality who is set in his ways. He is extremely intelligent and has natural leadership skill.",
+    quotes: ["Don't think of it as dying. Think of it as leaving early to avoid the rush.", "I do not understand, surely your very existence requires the ending of the world. It is written."],
+    seasons: "Season 1",
+    alias: [],
+    title:"Horseperson of the Apocalypse",
+    status: "Alive",
+    image: "https://static.wikia.nocookie.net/good-omens/images/9/9b/Death-MP.jpg/revision/latest?cb=20190501212902" //url image
 }
 
 ]
@@ -151,17 +165,17 @@ const chars = [
 
 const Character = { 
     name: "Death",
-    age: "Immortal - Older than time",
+    age: "Older than time - Immortal",
     pronouns: "He/Him",
-    affiliation:["Famine", "Pollution", "War"],
+    affiliation:["Famine", "Pollution", "War", "Demons"],
     species: "Horseperson of the Apocalypse",
     personality: "Death is said to have a logical and reasonable personality who is set in his ways. He is extremely intelligent and has natural leadership skill.",
     quotes: ["Don't think of it as dying. Think of it as leaving early to avoid the rush.", "I do not understand, surely your very existence requires the ending of the world. It is written."],
     seasons: "Season 1",
-    alias: ["Dr. Raven Sable"],
+    alias: [],
     title:"Horseperson of the Apocalypse",
     status: "Alive",
-    image: "https://static.wikia.nocookie.net/good-omens/images/1/1f/Famine-MP.jpg/revision/latest?cb=20190501213400" //url image
+    image: "https://static.wikia.nocookie.net/good-omens/images/9/9b/Death-MP.jpg/revision/latest?cb=20190501212902" //url image
 }
 
 module.exports = chars

@@ -25,10 +25,38 @@ router.route('/')
     }
 });
 
+router.route('/angels')
+.get((req,res) => {
+    const getAngels = characters.filter(char => char.species == "Angel")
+    res.json({message: "Loading all angels....", data: getAngels})
+    
+});
 
+router.route('/demons')
+.get((req,res) => {
+    const getDemons = characters.filter(char => char.species == "Demon")
+    res.json({message: "Loading all demons....", data: getDemons})
+    
+});
+
+router.route('/humans')
+.get((req,res) => {
+    const getHumans = characters.filter(char => char.species == "Human")
+    res.json({message: "Loading all humans....", data: getHumans})
+    
+});
+
+router.route('/horseperson')
+.get((req,res) => {
+    const getHorsePpl = characters.filter(char => char.species == "Horseperson of the Apocalypse")
+    res.json({message: "Loading all horsepeople....", data: getHorsePpl})
+    
+});
+
+// Params
 router.route('/:name')
 .get((req,res) => {
-    const findByName = characters.find(character => character.name.toLowerCase() == req.params.name.toLowerCase())
+    const findByName = characters.find(character => character.name.toLowerCase().includes(req.params.name.toLowerCase()))
     if(findByName == undefined){
         res.json({message: `Character by the name of ${req.params.name} could not be found. Try searching via /q?alias=nameHere`})
     }

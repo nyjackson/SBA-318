@@ -4,6 +4,7 @@ const port = 4000
 
 const locationRoute = require("./routes/locationsRoute")
 const charRoute = require("./routes/charRoute")
+const novelsRoute = require("./routes/novelsRoute")
 
 app.use(express.urlencoded({ extended: true }))
 
@@ -16,7 +17,7 @@ next()
 // Routes
 app.use("/locations", locationRoute)
 app.use("/characters", charRoute)
-
+app.use("/novels", novelsRoute)
 
 
 app.listen(port, () => {

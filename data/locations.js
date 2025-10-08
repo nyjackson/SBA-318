@@ -8,7 +8,7 @@ const locations = [
     population:"10 million Demons",
     inhabitants: ["Satan","Demons"],
     alliedWith:["Chattering Order of St Beryl", "Four Horsemen of the Apocalypse", "Michael (termporarily)"],
-    image: "" //url image
+    image: "https://static.wikia.nocookie.net/good-omens/images/3/3d/Hell_2x05.jpg/revision/latest/scale-to-width-down/1000?cb=20230807025236" //url image
 
 },
 { 
@@ -20,7 +20,7 @@ const locations = [
     population:"10 million Angels",
     inhabitants: ["God","Angels"],
     alliedWith:"Eric (temporarily)",
-    image: "" //url image
+    image: "https://static.wikia.nocookie.net/good-omens/images/9/9a/Heaven_1x05.jpg/revision/latest/scale-to-width-down/1000?cb=20230807011419" //url image
 
 }
 ]
