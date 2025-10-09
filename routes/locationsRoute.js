@@ -8,11 +8,11 @@ router.use(express.json());
 router
   .route("/")
   .get((req, res) => {
-    res.json({ message: "Loading all locations", data: locations });
+    res.status(200).json({ message: "Loading all locations", data: locations });
   })
   .post((req, res) => {
     locations.push(req.body);
-    res.json({ message: "Location successfully added.", data: req.body });
+    res.status(201).json({ message: "Location successfully added.", data: req.body });
   });
   
 
@@ -24,12 +24,12 @@ router
     );
     console.log(getByName);
     if (getByName)
-      res.json({
+      res.status(200).json({
         message: "Loading all locations named " + req.params.name,
         data: getByName,
       });
     else
-      res.json({
+      res.status(404).json({
         message: "No locations by the name of " + req.params.name + " found",
         data: req.params,
       });
@@ -41,14 +41,14 @@ router
     console.log(locationIndex);
     if (locationIndex !== -1) {
       locations[locationIndex] = { ...locations[locationIndex], ...req.body };
-      res.json({
+      res.status(200).json({
         message: "Data successfully changed.",
         data: req.body,
         dataToUpdate: locations[locationIndex],
       });
     }
      else {
-      res.json({
+      res.status(409).json({
         message: "Unable to locate location name or update properties listed.",
         data: req.body,
       });
@@ -63,12 +63,12 @@ router
     });
     //not working
     if (locationToDelete)
-      res.json({
+      res.status(200).json({
         message: "Location successfully deleted.",
         data: locationToDelete,
       });
     else
-      res.json({
+      res.status(404).json({
         message: "Location deleted and/or not found.",
         data: req.body,
       });

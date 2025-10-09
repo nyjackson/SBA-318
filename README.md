@@ -53,8 +53,8 @@ Main js file that handles routing and adds middleware.
 #### Locations
 - `GET /locations` - Retrieve all locations
 - `POST /locations` - Add a new location
-- `PUT /locations` - Update an existing location
-- `DELETE /locations`- Remove a location
+- `PUT /locations/:name` - Update an existing location by name
+- `DELETE /locations/:name`- Remove a location by name
 - `GET /locations/:name` - Get location by name
 
 #### Characters

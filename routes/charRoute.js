@@ -6,7 +6,7 @@ const characters = require('../data/characters')
 router.route('/')
 .get((req,res) => {
     if(req.query.length != undefined ){
-        res.send("Undefined Query Param Passed.")
+        res.status(404).json({message: "Undefined Query Param Passed.", query_param:req.query})
     }
     else if(req.query.alias !== undefined){
         console.log(req.query.alias)
@@ -17,39 +17,39 @@ router.route('/')
                 return partFound || aliasName.toLowerCase() == req.query.alias.toLowerCase()
             })
         ) 
-        res.json({message:"Character found by alias. Loading", data:findByAlias})
+        res.status(200).json({message:"Character found by alias. Loading", data:findByAlias})
     }
 
     else{
-        res.json({message: "Loading all characters....", data:characters})
+        res.status(200).json({message: "Loading all characters....", data:characters})
     }
 });
 
 router.route('/angels')
 .get((req,res) => {
     const getAngels = characters.filter(char => char.species == "Angel")
-    res.json({message: "Loading all angels....", data: getAngels})
+    res.status(200).json({message: "Loading all angels....", data: getAngels})
     
 });
 
 router.route('/demons')
 .get((req,res) => {
     const getDemons = characters.filter(char => char.species == "Demon")
-    res.json({message: "Loading all demons....", data: getDemons})
+    res.status(200).json({message: "Loading all demons....", data: getDemons})
     
 });
 
 router.route('/humans')
 .get((req,res) => {
     const getHumans = characters.filter(char => char.species == "Human")
-    res.json({message: "Loading all humans....", data: getHumans})
+    res.status(200).json({message: "Loading all humans....", data: getHumans})
     
 });
 
 router.route('/horseperson')
 .get((req,res) => {
     const getHorsePpl = characters.filter(char => char.species == "Horseperson of the Apocalypse")
-    res.json({message: "Loading all horsepeople....", data: getHorsePpl})
+    res.status(200).json({message: "Loading all horsepeople....", data: getHorsePpl})
     
 });
 
@@ -58,17 +58,11 @@ router.route('/:name')
 .get((req,res) => {
     const findByName = characters.find(character => character.name.toLowerCase().includes(req.params.name.toLowerCase()))
     if(findByName == undefined){
-        res.json({message: `Character by the name of ${req.params.name} could not be found. Try searching via /q?alias=nameHere`})
+        res.status(404).json({message: `Character by the name of ${req.params.name} could not be found. Try searching via /?alias=nameHere`})
     }
-    res.json({message: `Character by the name of ${req.params.name} found. Loading information.`, data: findByName})
+    res.status(200).json({message: `Character by the name of ${req.params.name} found. Loading information.`, data: findByName})
 })
 
-router.use((err,req,res,next) => {
-    // couldn't find by name, attempt to find by alias, and return if none found.
-    console.error(err)
-    res.status(404)
-    res.send("No character with that name has been found. Try searching by alias.")
-})
 
 
 module.exports = router
