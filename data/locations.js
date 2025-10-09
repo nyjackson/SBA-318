@@ -1,7 +1,6 @@
-let locId = 0
+
 const locations = [
     {
-    id: locId++, 
     name: "Hell",
     type: "Infernal Realm",
     introduction: "Hello. Have a miserable eternity. We'd like to apologize for the wait and the conditions, but we won't. Cheer up. Things could be worse, and they will be... for the rest of eternity, worse and worse and worse.",
@@ -14,7 +13,6 @@ const locations = [
 
 },
 { 
-    id: locId++, 
     name: "Heaven",
     type: "Celestial Realm",
     introduction:"",

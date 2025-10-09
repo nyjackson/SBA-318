@@ -1,6 +1,7 @@
 const express = require("express")
 const router = express.Router()
 const locations = require("../data/locations")
+
 router.use(express.urlencoded({ extended: true }))
 router.use(express.json())
 
