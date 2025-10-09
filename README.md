@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This Express server application provides a RESTful API for Good Omens universe data, including characters, locations, and books. Users can view, create, update, and delete location data through both API endpoints and a web form interface for adding locations.
+This Express server application provides a RESTful API for universe data from the show Good Omens, including characters, locations, and books. Users can view, create, update, and delete location data through both API endpoints and a web form interface for adding locations.
 
 ## Pre-Requisite
 
@@ -59,6 +59,7 @@ Main js file that handles routing and adds middleware.
 - Location Update Form: http://localhost:4000/form
 - Locations API: http://localhost:4000/locations
 - Books API: http://localhost:4000/books
+- Characters API: http://localhost:4000/characters
 
 ### API Endpoints
 
