@@ -4,7 +4,14 @@
 
 This Express server application provides a RESTful API for universe data from the show Good Omens, including characters, locations, and books. Users can view, create, update, and delete location data through both API endpoints and a web form interface for adding locations.
 
-## Pre-Requisite
+- Create a server application with Node and Express.
+- Create a RESTful API using Express.
+- Create Express middleware.
+- Use Express middleware.
+- Use a template engine to render views with Express.
+- Interact with a self-made API through HTML forms.
+
+## Pre-Requisites
 
 - Node.js
 - npm
