@@ -25,5 +25,16 @@ const locations = [
 }
 ]
 
-
+/***
+ *  name: "",
+    type: "",
+    introduction:"",
+    description: "",
+    alias: [],
+    population:"",
+    inhabitants: [],
+    alliedWith:"",
+    image:""
+ * 
+ */
 module.exports = locations;

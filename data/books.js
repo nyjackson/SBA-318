@@ -1,4 +1,4 @@
-const novels = [{
+const books = [{
     title: "Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch",
     authors: ["Neil Gaiman", "Terry Pratchett"],
     genre: ["fantasy","horror","comedy"],
@@ -23,16 +23,16 @@ const novels = [{
 ]
 
 // const Novel = {
-//     title: "",
-//     authors: [],
-//     genre: [],
-//     type: "",
-//     release_date: "",
-//     page_count: 186,
-//     cover_image: "",
-//     publishers:[],
-//     description:""
+    // title: "",
+    // authors: [],
+    // genre: [],
+    // type: "",
+    // release_date: "",
+    // page_count: 186,
+    // cover_image: "",
+    // publishers:[],
+    // description:""
 // }
 
 
-module.exports = novels
+module.exports = books

@@ -4,8 +4,7 @@ const port = 4000
 
 const locationRoute = require("./routes/locationsRoute")
 const charRoute = require("./routes/charRoute")
-const novelsRoute = require("./routes/novelsRoute")
-
+const bookRoute = require("./routes/bookRoute")
 app.use(express.urlencoded({ extended: true }))
 
 // Middleware
@@ -17,8 +16,11 @@ next()
 // Routes
 app.use("/locations", locationRoute)
 app.use("/characters", charRoute)
-app.use("/novels", novelsRoute)
+app.use("/books", bookRoute)
 
+app.get("/quiz", (req, res) => {
+res.send("Quiz Begin")
+})
 
 app.listen(port, () => {
     console.log(
