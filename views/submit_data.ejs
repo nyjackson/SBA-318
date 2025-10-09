@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Submit Data</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
   </head>
   <body>
     <h1>Submission Form</h1>
@@ -19,11 +20,34 @@
     </nav>
     <form action="/locations" method="post">
       <%= %>
-      <label for="fname">First name:</label>
-      <input type="text" id="fname" name="fname" /><br /><br />
-      <label for="lname">Last name:</label>
+      <label for="lname">Location Name:</label>
       <input type="text" id="lname" name="lname" /><br /><br />
-      <!-- <input type="submit" value="Submit" /> -->
+      <label for="type">Type:</label>
+      <input type="text" id="type" name="type" /><br /><br />
+
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description" /><br /><br />
+      <label for="alias">Alias:</label>
+      <input type="text" id="alias" name="alias" /><br /><br />
+
+      <label for="population">Population</label>
+      <input type="text" id="population" name="population" /><br /><br />
+      <label for="inhabitants">Inhabitants:</label>
+      <input type="text" id="inhabitants" name="inhabitants" /><br /><br />
+
+      <label for="alliedWith">Allied With</label>
+      <input type="text" id="alliedWith" name="alliedWith" /><br /><br />
+      <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
+
+<!-- name: "",
+    type: "",
+    introduction:"",
+    description: "",
+    alias: [],
+    population:"",
+    inhabitants: "",
+    alliedWith:[],
+    image:"" -->

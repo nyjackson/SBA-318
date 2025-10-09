@@ -10,6 +10,7 @@ app.set('view engine', 'ejs')
 app.set('views', './views')
 
 app.use(express.urlencoded({ extended: true }))
+app.use(express.static("public"))
 
 // Middleware
 const logger = app.use((req,res,next) => {
@@ -23,7 +24,8 @@ app.use("/characters", charRoute)
 app.use("/books", bookRoute)
 
 app.get("/", (req, res) => {
-res.render('home')
+    
+    res.render('home')
 })
 app.get("/form", (req, res) => {
 res.render('submit_data')
