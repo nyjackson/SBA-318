@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Submit Data</title>
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
   </head>
   <body>
     <h1>Submission Form: Location</h1>
@@ -20,23 +20,38 @@
     </nav>
     <form action="/locations" method="post">
       <label for="name">Location Name:</label>
-      <input type="text" id="name" name="name" required/><br /><br />
+      <input type="text" id="name" name="name" required /><br /><br />
       <label for="type">Type:</label>
       <input type="text" id="type" name="type" /><br /><br />
 
       <label for="description">Description:</label>
-      <input type="text" id="description" name="description" required/><br /><br />
+      <input
+        type="text"
+        id="description"
+        name="description"
+        required
+      /><br /><br />
       <label for="alias">Alias:</label>
       <input type="text" id="alias" name="alias" /><br /><br />
 
       <label for="population">Population</label>
-      <input type="text" id="population" name="population" required/><br /><br />
+      <input
+        type="text"
+        id="population"
+        name="population"
+        required
+      /><br /><br />
       <label for="inhabitants">Inhabitants:</label>
-      <input type="text" id="inhabitants" name="inhabitants" required/><br /><br />
+      <input
+        type="text"
+        id="inhabitants"
+        name="inhabitants"
+        required
+      /><br /><br />
 
       <label for="alliedWith">Allied With:</label>
       <input type="text" id="alliedWith" name="alliedWith" /><br /><br />
-      <input type="submit" value="Submit" id = "submit-btn"/>
+      <input type="submit" value="Submit" id="submit-btn" />
     </form>
   </body>
 </html>

@@ -12,9 +12,10 @@ router
   })
   .post((req, res) => {
     locations.push(req.body);
-    res.status(201).json({ message: "Location successfully added.", data: req.body });
+    res
+      .status(201)
+      .json({ message: "Location successfully added.", data: req.body });
   });
-  
 
 router
   .route("/:name")
@@ -46,8 +47,7 @@ router
         data: req.body,
         dataToUpdate: locations[locationIndex],
       });
-    }
-     else {
+    } else {
       res.status(409).json({
         message: "Unable to locate location name or update properties listed.",
         data: req.body,
