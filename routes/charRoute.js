@@ -63,7 +63,7 @@ router.route("/:name").get((req, res) => {
     character.name.toLowerCase().includes(req.params.name.toLowerCase())
   );
   if (findByName == undefined) {
-    res.status(404).json({
+    return res.status(404).json({
       message: `Character by the name of ${req.params.name} could not be found. Try searching via /?alias=nameHere`,
     });
   }
