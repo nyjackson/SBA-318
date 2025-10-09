@@ -19,15 +19,20 @@ res.json({message:"Location successfully added.", data: req.body})
         return true;
       }
     })
-    if (locationToDelete) res.json({message:"Location successfully deleted.",locationToDelete});
-    else next();
+    //not working
+    if (locationToDelete) res.json({message:"Location successfully deleted.",data:locationToDelete});
+    else res.json({message:"Location deleted and/or not found.", data: req.body});
 })
+// .put((req,res) => {
+
+// })
 
 router.route('/:name')
 .get((req,res) => {
     const getByName = locations.filter(location => location.name.toLowerCase() == req.params.name)
+    console.log(getByName)
     if (getByName) res.json({message: "Loading all locations named " + req.params.name, data: getByName});
-    else next();
+    else res.json({message: "No locations by the name of " + req.params.name + " found", data: req.params});
     
 })
 

@@ -5,6 +5,10 @@ const port = 4000
 const locationRoute = require("./routes/locationsRoute")
 const charRoute = require("./routes/charRoute")
 const bookRoute = require("./routes/bookRoute")
+
+app.set('view engine', 'ejs')
+app.set('views', './views')
+
 app.use(express.urlencoded({ extended: true }))
 
 // Middleware
@@ -18,10 +22,12 @@ app.use("/locations", locationRoute)
 app.use("/characters", charRoute)
 app.use("/books", bookRoute)
 
-app.get("/quiz", (req, res) => {
-res.send("Quiz Begin")
+app.get("/", (req, res) => {
+res.render('home')
 })
-
+app.get("/form", (req, res) => {
+res.render('submit_data')
+})
 app.listen(port, () => {
     console.log(
         "Started listening on port ", port
