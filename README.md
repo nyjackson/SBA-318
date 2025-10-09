@@ -56,7 +56,7 @@ Main js file that handles routing and adds middleware.
 ## Available Endpoints
 
 - Home: http://localhost:4000/
-- Form: http://localhost:4000/form
+- Location Update Form: http://localhost:4000/form
 - Locations API: http://localhost:4000/locations
 - Books API: http://localhost:4000/books
 
