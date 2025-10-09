@@ -18,13 +18,22 @@ console.log(`${req.method} on ${req.url}`)
 next()
 })
 
+const requestTime = app.use((req,res,next) => {
+    let date = new Date()
+    console.log("Requested on: " + date)
+    next()
+}) 
+
+app.use((err, req, res, next) => {
+  res.status(400).send(err.message);
+});
+
 // Routes
 app.use("/locations", locationRoute)
 app.use("/characters", charRoute)
 app.use("/books", bookRoute)
 
 app.get("/", (req, res) => {
-    
     res.render('home')
 })
 app.get("/form", (req, res) => {

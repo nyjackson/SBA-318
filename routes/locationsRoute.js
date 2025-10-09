@@ -14,7 +14,7 @@ res.json({message:"Location successfully added.", data: req.body})
 })
 .delete((req,res) => {
     const locationToDelete = locations.find((location, i) => {
-      if (location.id == req.body.name) {
+      if (location.name == req.body.name) {
         locations.splice(i, 1);
         return true;
       }

@@ -1,5 +1,7 @@
+let charId = 0
 const chars = [
-    { 
+    {
+        id: charId++, 
     name: "Aziraphale",
     age: "6000+ years old - Immortal",
     pronouns: "He/Him",
@@ -15,6 +17,7 @@ const chars = [
 
 },
 { 
+    id: charId++, 
     name: "Crowley",
     age: "6000+ years old - Immortal",
     pronouns: "All or Any",
@@ -30,6 +33,7 @@ const chars = [
 
 },
 { 
+    id: charId++, 
     name: "Adam Young",
     age: "11",
     pronouns: "He/Him",
@@ -45,6 +49,7 @@ const chars = [
 
 },
 { 
+    id: charId++, 
     name: "Anathema Device",
     age: "Mid 20's",
     pronouns: "She/Her",
@@ -60,6 +65,7 @@ const chars = [
 
 },
 { 
+    id: charId++, 
     name: "Newton Pulsifer",
     age: "Unknown",
     pronouns: "He/Him",
@@ -74,6 +80,7 @@ const chars = [
     image: "https://static.wikia.nocookie.net/good-omens/images/f/fd/Newt-MP.jpg/revision/latest?cb=20190501213649" //url image
 },
 { 
+    id: charId++, 
     name: "Madame Tracy",
     age: "Unknown",
     pronouns: "She/Her",
@@ -88,6 +95,7 @@ const chars = [
     image: "https://static.wikia.nocookie.net/good-omens/images/d/da/MadameTracy-MP.jpg/revision/latest?cb=20190501213445" //url image
 },
 { 
+    id: charId++, 
     name: "Shadwell",
     age: "Unknown",
     pronouns: "He/Him",
@@ -102,6 +110,7 @@ const chars = [
     image: "https://static.wikia.nocookie.net/good-omens/images/6/65/Shadwell-MP.jpg/revision/latest?cb=20190501213750" //url image
 },
 { 
+    id: charId++, 
     name: "Pollution",
     age: "Unknown: Took over from Pestilence in 1936",
     pronouns: "They/Them",
@@ -116,6 +125,7 @@ const chars = [
     image: "https://static.wikia.nocookie.net/good-omens/images/9/93/Pollution-MP.jpg/revision/latest?cb=20190501213311" //url image
 },
 { 
+    id: charId++, 
     name: "Famine",
     age: "Unknown",
     pronouns: "He/Him",
@@ -130,6 +140,7 @@ const chars = [
     image: "https://static.wikia.nocookie.net/good-omens/images/1/1f/Famine-MP.jpg/revision/latest?cb=20190501213400" //url image
 },
 { 
+    id: charId++, 
     name: "Death",
     age: "Older than time - Immortal",
     pronouns: "He/Him",

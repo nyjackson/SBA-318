@@ -1,0 +1,13 @@
+body {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+display:flex;
+flex-direction:column;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    padding:1%;
+}
+input {
+    width:40%;
+}

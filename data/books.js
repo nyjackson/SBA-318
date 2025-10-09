@@ -1,4 +1,6 @@
+let bookId = 0
 const books = [{
+    id: bookId++, 
     title: "Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch",
     authors: ["Neil Gaiman", "Terry Pratchett"],
     genre: ["fantasy","horror","comedy"],
@@ -10,6 +12,7 @@ const books = [{
     description:"According to The Nice and Accurate Prophecies of Agnes Nutter, Witch (the world's only completely accurate book of prophecies, written in 1655, before she exploded), the world will end on a Saturday. Next Saturday, in fact. Just before dinner. So the armies of Good and Evil are amassing, Atlantis is rising, frogs are falling, tempers are flaring. Everything appears to be going according to Divine Plan. Except a somewhat fussy angel and a fast-living demon—both of whom have lived amongst Earth's mortals since The Beginning and have grown rather fond of the lifestyle—are not actually looking forward to the coming Rapture. And someone seems to have misplaced the Antichrist..."
 },
 {
+    id: bookId++, 
     title: "Good Omens: The Official (and Ineffable) Graphic Novel",
     authors: ["Neil Gaiman", "Terry Pratchett", "Colleen Doran"],
     genre: ["fantasy","horror","comedy"],
