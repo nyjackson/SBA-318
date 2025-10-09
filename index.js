@@ -13,12 +13,12 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.static("public"))
 
 // Middleware
-const logger = app.use((req,res,next) => {
+app.use((req,res,next) => {
 console.log(`${req.method} on ${req.url}`)
 next()
 })
 
-const requestTime = app.use((req,res,next) => {
+app.use((req,res,next) => {
     let date = new Date()
     console.log("Requested on: " + date)
     next()
