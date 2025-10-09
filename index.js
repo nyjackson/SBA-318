@@ -24,10 +24,6 @@ app.use((req,res,next) => {
     next()
 }) 
 
-app.use((err, req, res, next) => {
-  res.status(400).send(err.message);
-});
-
 // Routes
 app.use("/locations", locationRoute)
 app.use("/characters", charRoute)
@@ -39,6 +35,12 @@ app.get("/", (req, res) => {
 app.get("/form", (req, res) => {
 res.render('submit_data')
 })
+
+// Error Middleware
+app.use((err, req, res, next) => {
+  res.status(400).send(err.message);
+});
+
 app.listen(port, () => {
     console.log(
         "Started listening on port ", port
