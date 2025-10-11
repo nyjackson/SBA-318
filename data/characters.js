@@ -23,6 +23,7 @@ const chars = [
     alias: ["Angel", "Mr. A. Z. Fell", "The Southern Pansy", "Dr. McFell"],
     title: "Angel of the Eastern Gate",
     status: "Alive",
+    portayed_by: "Michael Sheen",
     image:
       "https://static.wikia.nocookie.net/good-omens/images/5/54/Aziraphale-MP.jpg/revision/latest/scale-to-width-down/1000?cb=20190501214031", //url image
   },
@@ -52,6 +53,7 @@ const chars = [
     ],
     title: "Serpent of Eden",
     status: "Alive",
+    portayed_by: "David Tennant",
     image:
       "https://static.wikia.nocookie.net/good-omens/images/d/da/Crowley-MP.jpg/revision/latest?cb=20190501213946", //url image
   },
@@ -74,6 +76,7 @@ const chars = [
     ],
     title: "The Son of Satan",
     status: "Alive",
+    portayed_by: "Sam Taylor Buck",
     image:
       "https://static.wikia.nocookie.net/good-omens/images/a/a0/Adam-MP.jpg/revision/latest?cb=20190501214130", //url image
   },
@@ -100,6 +103,7 @@ const chars = [
     alias: ["My Dear", "Witch"],
     title: "Practical Occultist & Professional Descendant",
     status: "Alive",
+    portayed_by: "Adria Arjona",
     image:
       "https://static.wikia.nocookie.net/good-omens/images/1/1b/Anathema-MP.jpg/revision/latest?cb=20190501213551", //url image
   },
@@ -120,6 +124,7 @@ const chars = [
     alias: ["Witchfinder Pulsifer"],
     title: "Witchfinder Pulsifer",
     status: "Alive",
+    portayed_by: "Jack Whitehall",
     image:
       "https://static.wikia.nocookie.net/good-omens/images/f/fd/Newt-MP.jpg/revision/latest?cb=20190501213649", //url image
   },
@@ -136,6 +141,7 @@ const chars = [
     alias: ["Jezebel"],
     title: "Medium",
     status: "Alive",
+    portayed_by: "Miranda Richardson",
     image:
       "https://static.wikia.nocookie.net/good-omens/images/d/da/MadameTracy-MP.jpg/revision/latest?cb=20190501213445", //url image
   },
@@ -153,6 +159,8 @@ const chars = [
     alias: ["Witchfinder Sergeant"],
     title: "Witchfinder Sergeant",
     status: "Alive",
+    portayed_by: "Michael McKean",
+
     image:
       "https://static.wikia.nocookie.net/good-omens/images/6/65/Shadwell-MP.jpg/revision/latest?cb=20190501213750", //url image
   },
@@ -170,6 +178,7 @@ const chars = [
     alias: ["White", "Chalky", "Blanc", "Albus", "Weiss", "Snowy"],
     title: "Horseperson of the Apocalypse",
     status: "Unknown",
+    portayed_by: "Lourdes Faberes",
     image:
       "https://static.wikia.nocookie.net/good-omens/images/9/93/Pollution-MP.jpg/revision/latest?cb=20190501213311", //url image
   },
@@ -187,6 +196,7 @@ const chars = [
     alias: ["Dr. Raven Sable"],
     title: "Horseperson of the Apocalypse",
     status: "Unknown",
+    portayed_by: "",
     image:
       "https://static.wikia.nocookie.net/good-omens/images/1/1f/Famine-MP.jpg/revision/latest?cb=20190501213400", //url image
   },
@@ -207,9 +217,31 @@ const chars = [
     alias: [],
     title: "Horseperson of the Apocalypse",
     status: "Alive",
+    portayed_by: "Brian Cox (voice) and Jamie Hill (physically)",
     image:
       "https://static.wikia.nocookie.net/good-omens/images/9/9b/Death-MP.jpg/revision/latest?cb=20190501212902", //url image
   },
+  {
+  id: charId++,
+  name: "War",
+  age: "Unknown (Ancient)",
+  pronouns: "She/Her",
+  affiliation: ["Famine", "Pollution", "Death"],
+  species: "Horseperson of the Apocalypse",
+  personality:
+    "War, true to her name, enjoys violence and weapons as shown in 'The Book' when she expressed joy at the peace accord going south.",
+  quotes: [
+    "I'd love to stay and get to know you all better... but duty calls.",
+    "Run home and play with your dollies, little girl.",
+  ],
+  seasons: "Season 1",
+  alias: ["Carmine Zuigiber"],
+  title: "Horseperson of the Apocalypse",
+  status: "Unknown",
+  portayed_by: "Mireille Enos",
+  image:
+    "https://static.wikia.nocookie.net/good-omens/images/d/d9/War-MP.jpg/revision/latest?cb=20190501213232", //url image
+}
 ];
 // ^ array of character objects
 
@@ -225,28 +257,30 @@ const chars = [
 //     alias: [],
 //     title:"",
 //     status: "",
+//     portayed_by: "",
 //     image: "" //url image
 
 // }
 
 const Character = {
-  name: "Death",
-  age: "Older than time - Immortal",
-  pronouns: "He/Him",
-  affiliation: ["Famine", "Pollution", "War", "Demons"],
+  id: ++charId,
+  name: "War",
+  age: "Unknown (Ancient)",
+  pronouns: "She/Her",
+  affiliation: ["Famine", "Pollution", "Death"],
   species: "Horseperson of the Apocalypse",
   personality:
-    "Death is said to have a logical and reasonable personality who is set in his ways. He is extremely intelligent and has natural leadership skill.",
+    "War, true to her name, enjoys violence and weapons as shown in 'The Book' when she expressed joy at the peace accord going south.",
   quotes: [
-    "Don't think of it as dying. Think of it as leaving early to avoid the rush.",
-    "I do not understand, surely your very existence requires the ending of the world. It is written.",
+    "I'd love to stay and get to know you all better... but duty calls.",
+    "Run home and play with your dollies, little girl.",
   ],
   seasons: "Season 1",
-  alias: [],
+  alias: ["Carmine Zuigiber"],
   title: "Horseperson of the Apocalypse",
-  status: "Alive",
+  status: "Unknown",
   image:
-    "https://static.wikia.nocookie.net/good-omens/images/9/9b/Death-MP.jpg/revision/latest?cb=20190501212902", //url image
+    "https://static.wikia.nocookie.net/good-omens/images/d/d9/War-MP.jpg/revision/latest?cb=20190501213232", //url image
 };
 
 module.exports = chars;
